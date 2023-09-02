@@ -79,8 +79,6 @@
                             <tr>
                                 <th>الحساب</th>
                                 <th>البيان</th>
-                                <th>تاريخ الاستحقاق</th>
-                                <th>الضرائب(%)</th>
                                 <th>المدين</th>
                                 <th>الدائن</th>
                             </tr>
@@ -97,12 +95,6 @@
                                         <span t-field="line.name"/>
                                     </td>
                                     <td>
-                                        <span t-field="line.date_maturity"/>
-                                    </td>
-                                    <td>
-                                        <span t-field="line.tax_ids"/>
-                                    </td>
-                                    <td>
                                         <span t-field="line.debit"/>
                                     </td>
                                     <td>
@@ -114,8 +106,6 @@
                             </t>
                             <tr>
                                 <td><strong>الإجمالي:</strong></td>
-                                <td></td>
-                                <td></td>
                                 <td></td>
                                 <td width="10%"><strong>
                                     <span><t t-esc="total"/></span>
